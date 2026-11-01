@@ -90,7 +90,7 @@ or alignment with the project.
   refactoring or cleanup suggested by AI unless a maintainer
   specifically requests it. 
 - **Design First:** For any non-trivial change, we strongly recommend
-  opening an **bug report** or discuss it on the **Mailing Lists** 
+  opening a **bug report** or discuss it on the **Mailing Lists**
   first. Contributions that arrive out
   of the blue with significant AI-generated logic that doesn't align
   with our roadmap or architecture will not be accepted. 
