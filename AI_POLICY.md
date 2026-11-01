@@ -1,43 +1,34 @@
 # AI Contribution Policy
 
-Mastodon is a complex project, deployed at scale and across thousands
-of servers, used daily by hundreds of thousands of people
-worldwide. The complexity of the project includes database and server
-software, user-facing web and mobile clients, administration
-interfaces, and integration with other Fediverse software via
-ActivityPub and associated standards. It is important that the
-software has a high standard of quality and maintainability, with
-careful thought given to changes that affect production deployments.
+[comments in brackets]
+
+[first paragraph deleted, it didn't say anything. Maybe we want to add
+one later]
 
 Today, AI-assisted tools are being deployed in many coding
 environments. Some of the "lower-end" features like keyword-driven
 code completion can be useful aids; other tools make it very easy to
-generate contributions without the submitter fully understanding how
+generate contributions not welcomed by FreeBSD, i.e. without the 
+submitter fully understanding how
 the code works, or the consequences of specific implementation
 choices. These latter forms of AI assistance cause major overhead for
-project maintainers. There are a small number of people on the
-Mastodon core team, and we seek to use our time and resources
-effectively.
+project members.
 
 Our project is fundamentally about authentic human connection and
 communication. These values are reflected in our policy towards
 AI-generated contributions (below), just as much as they are embodied
-in how we work together, and how Mastodon enables anyone to connect on
-the social web. We generally *do not encourage* AI-assisted
-contributions; we have adopted this policy to reinforce the importance
-of genuine human interaction in everything we work on.
+in how we work together, and how FreeBSD enables anyone to connect on
+the social web.
 
 ## 1. Accountability
 
-We recognise that some tools make it difficult to disable AI-generated
-or assisted code, and that sometimes the output can be helpful. With
-that said, Mastodon is a human project, so even if you've used some
+FreeBSD is a human-to-human project, so even if you've used some
 AI-based tools to support your work processes, in the end we expect
 contributions to be made by you, the person doing the work.
 
 **The human contributor is the sole party responsible for the contribution.**
 
-If you submit a Pull Request that includes AI-generated code,
+If you submit a contribution that includes AI-generated code,
 documentation, or comments:
 
 - You must fully understand every line of code in the submission.
@@ -48,22 +39,23 @@ documentation, or comments:
 answer to a reviewer's question. Copy-and-pasting to and from an AI
 chatbot during the process of code review is not acceptable (unless
 this is only for translation to and from English). If a maintainer
-suspects you do not understand your PR, it will be closed immediately.
+suspects you do not understand your submission it will not be
+accepted.
 
-Autonomous AI agents may not submit Pull Requests to Mastodon
-repositories. Humans will take time to review the code, and we expect
+Autonomous AI agents may not submit submissions to FreeBSD. 
+Humans will take time to review the code, and we expect
 a human contributor to make the same commitment in handling the
 submission themselves. Do not post comments on issues or PRs that are
-AI-generated. Discussions on the Mastodon repositories are for humans
+AI-generated. Discussions on the FreeBSD repositories are for humans
 only.
 
 ## 2. Disclosure
 
 If AI was used to generate a significant portion of your contribution
 (i.e. beyond simple autocomplete), we require you to **disclose it**
-in the Pull Request description. Note that you should not use AI to
-create the PR description itself (unless you’ve used it for
-translation) - as discussed above, we expect PRs to be submitted by
+in the submission description. Note that you should not use AI to
+create the description itself (unless you’ve used it for
+translation) - as discussed above, we expect contributions to be submitted by
 humans.
 
 Transparency helps maintainers calibrate their review focus. Please
@@ -81,13 +73,16 @@ Assisted-by: Claude Opus 4.5
 Assisted-by: Google Gemini 3
 ```
 
+You are encouraged to describe in more detail how and where you used
+an LLM (code generation, code review, documentation etc.).
+
 ## 3. Intentionality
 
-Mastodon is a project with code written by humans and interfaces
+FreeBSD is a project with code written by humans and interfaces
 designed by humans - for everyone. It is not a testing ground for AI
 experimentation.
 
-We do not accept Pull Requests and Issues that result from running an
+We do not accept contributions and bug reports that result from running an
 AI tool over the codebase to find improvements without prior context
 or alignment with the project.
 
@@ -95,11 +90,15 @@ or alignment with the project.
   refactoring or cleanup suggested by AI unless a maintainer
   specifically requests it. 
 - **Design First:** For any non-trivial change, we strongly recommend
-  opening an **Issue** or **Discussion** first. PRs that arrive out
+  opening an **bug report** or discuss it on the **Mailing Lists** 
+  first. Contributions that arrive out
   of the blue with significant AI-generated logic that doesn't align
-  with our roadmap or architecture will be closed. 
+  with our roadmap or architecture will not be accepted. 
 - **Quality over Quantity:** We value one thoughtful, manually crafted
   PR over ten AI-assisted fixes for nonexistent or trivial issues. 
+- **Size:** As with human-made contributions it is much more likely to be
+  accepted if it comes in small chunks. Splitting up large code
+  changes is highly encouraged.
 
 Note that these guidelines apply equally to human-created
 contributions. Please consider whether the change is meaningful and
@@ -124,37 +123,39 @@ AI-generated code, **do not submit it**.
 ## 5. Prohibited Uses
 
 The following are strictly prohibited and will result in immediate
-closure of a Pull Request or Issue and potentially a block from the
+rejection of the contribution and potentially a block from the
 organisation: 
 
-- **Automated PR Descriptions:** Using AI to write PR descriptions
+- **Automated Descriptions:** Using AI to write submission descriptions
   that are vague, overly flowery, or fail to accurately describe the
   technical changes. We want to hear from *you* - the developer -
   why this change matters (see points 1 & 2). 
 - **Unvetted Boilerplate:** Submitting large blocks of AI-generated
   boilerplate that hasn't been trimmed to what's actually
   necessary. If you don't understand what the code does, don't submit
-  the PR. 
+  it. 
 - **Hallucinated Features:** Submitting PRs for features or bug fixes
   that don't exist, based on AI hallucinations about the project's
   capabilities. 
 
 ## 6. Enforcement
 
-Mastodon project maintainers reserve the right to close any Pull
-Request that appears to be a low-effort AI contribution, without
+The FreeBSD project reserves the right to reject any submission
+that appears to be a low-effort AI contribution, without
 providing a detailed technical critique. We are a small team
 supporting a production project; our time is best spent working with
 contributors who understand the project's technical requirements, and
 the safety of our users' data.
 
 Cases of repeated violations of these (or any of our other contributor
-guidelines) could result in a ban from our repositories.
+guidelines) could result in a ban from future submissions.
 
 ### Acknowledgement
 
 This policy was written by humans, based on the work in the
-[CloudNativePG AI
+[Mastodon AI
+Policy](https://github.com/mastodon/.github/blob/main/AI_POLICY.md),
+which was based on the [CloudNativePG AI
 Policy](https://github.com/cloudnative-pg/governance/blob/main/AI_POLICY.md),
 which in turn was inspired by the [Ghostty AI
 Policy](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md)
